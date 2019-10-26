@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>codejam canvas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img src="data/top_left.svg" alt="" class="left_menu" />
+        <h1>CodeJam - Canvas</h1>
+        <img src="data/top-right.svg" alt="" class="right_menu" />
+    </header>
+
+    <main class="wrapper">
+        <div class="tools">
+            <div class="tools--area">
+                <div class="tools--paint">
+                    <img src="data/paint_bucket.svg" alt="" />Paint bucket
+                </div>
+                <div class="tools--color">
+                    <img src="data/choose_color.svg" alt="" />Choose color
+                </div>
+                <div class="tools--move"><img src="data/move.svg" alt="" />Move</div>
+                <div class="tools--transform">
+                    <img src="data/transform.svg" alt="" />Transform
+                </div>
+            </div>
+        </div>
+        <div class="color">
+            <div class="color--area">
+                <div class="color--current">
+                    <img src="data/curr_color.svg" alt="" />Current color
+                </div>
+                <div class="color--prev">
+                    <img src="data/prev_color.svg" alt="" />Prev color
+                </div>
+                <div class="color--red"><img src="data/red.svg" alt="" />red</div>
+                <div class="color--blue"><img src="data/blue.svg" alt="" />blue</div>
+            </div>
+        </div>
+        <div class="canvas_field">
+            <canvas id="my_canvas" width="512" height="512"> </canvas>
+            <ul class="canvas_field--select">
+                <li class="canvas_field--select--4x4">4x4</li>
+                <li class="canvas_field--select--32x32">32x32</li>
+                <li class="canvas_field--select--png">PNG</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <!--    <script type="text/javascript" src="data/4x4.json"></script>-->
+</body>
+
+</html>
